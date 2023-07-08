@@ -13,3 +13,16 @@ function formatRupiah(num) {
   return 'Rp.'+num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
 }
 console.log(formatRupiah(10000));
+
+// fungsi ajax rest api get & post & put 
+var xhr = new XMLHttpRequest();
+// sample penggunaan
+function LoadDataTest(id){
+    // memanggil data dengan ajax 
+    var url = 'https://xxxxx.com/dev?id=' + id;;
+    xhr.onreadystatechange = function(){
+        console.log(this.xxxx);
+    };
+    xhr.open("GET", url, true);
+    xhr.send();
+}
