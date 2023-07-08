@@ -19,7 +19,7 @@ var xhr = new XMLHttpRequest();
 // sample penggunaan
 function LoadDataTest(id){
     // memanggil data dengan ajax 
-    var url = 'https://xxxxx.com/dev?id=' + id;;
+    var url = 'https://xxxxx.com/dev?id=' + id;
     xhr.onreadystatechange = function(){
         console.log(this.xxxx);
     };
